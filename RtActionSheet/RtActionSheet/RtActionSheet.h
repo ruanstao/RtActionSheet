@@ -11,7 +11,7 @@
 
 @interface RtActionSheet : UIView
 
--(id)initWithCancelButtonItem:(RtButtonItem *)inCancelButtonItem destructiveButtonItem:(RtButtonItem *)inDestructiveItem otherButtonItems:(RtButtonItem *)inOtherButtonItems,...;
+-(id)initWithCancelButtonItem:(RtButtonItem *)inCancelButtonItem destructiveButtonItem:(RtButtonItem *)inDestructiveItem otherButtonItems:(RtButtonItem *)inOtherButtonItems,...NS_REQUIRES_NIL_TERMINATION;
 
 - (NSInteger)addButtonWithTitle:(RtButtonItem *)item;
 
