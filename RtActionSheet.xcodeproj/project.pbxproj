@@ -15,9 +15,9 @@
 		DAFE7D721CBB4038000388C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE7D701CBB4038000388C8 /* LaunchScreen.storyboard */; };
 		DAFE7D7D1CBB4038000388C8 /* RtActionSheetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFE7D7C1CBB4038000388C8 /* RtActionSheetTests.m */; };
 		DAFE7D881CBB4038000388C8 /* RtActionSheetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFE7D871CBB4038000388C8 /* RtActionSheetUITests.m */; };
-		DAFE7D971CBB4054000388C8 /* RtActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFE7D961CBB4054000388C8 /* RtActionSheet.m */; };
-		DAFE7DA01CBB42C2000388C8 /* RtButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFE7D9F1CBB42C2000388C8 /* RtButtonItem.m */; };
-		DAFE7DA31CBB7005000388C8 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFE7DA21CBB7005000388C8 /* UIImageEffects.m */; };
+		DAFE7DAB1CBB898D000388C8 /* RtActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFE7DA61CBB898D000388C8 /* RtActionSheet.m */; };
+		DAFE7DAC1CBB898D000388C8 /* RtButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFE7DA81CBB898D000388C8 /* RtButtonItem.m */; };
+		DAFE7DAD1CBB898D000388C8 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFE7DAA1CBB898D000388C8 /* UIImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +54,12 @@
 		DAFE7D831CBB4038000388C8 /* RtActionSheetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RtActionSheetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFE7D871CBB4038000388C8 /* RtActionSheetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RtActionSheetUITests.m; sourceTree = "<group>"; };
 		DAFE7D891CBB4038000388C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAFE7D951CBB4054000388C8 /* RtActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtActionSheet.h; sourceTree = "<group>"; };
-		DAFE7D961CBB4054000388C8 /* RtActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RtActionSheet.m; sourceTree = "<group>"; };
-		DAFE7D9E1CBB42C2000388C8 /* RtButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtButtonItem.h; sourceTree = "<group>"; };
-		DAFE7D9F1CBB42C2000388C8 /* RtButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RtButtonItem.m; sourceTree = "<group>"; };
-		DAFE7DA11CBB7005000388C8 /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
-		DAFE7DA21CBB7005000388C8 /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
+		DAFE7DA51CBB898D000388C8 /* RtActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtActionSheet.h; sourceTree = "<group>"; };
+		DAFE7DA61CBB898D000388C8 /* RtActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RtActionSheet.m; sourceTree = "<group>"; };
+		DAFE7DA71CBB898D000388C8 /* RtButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtButtonItem.h; sourceTree = "<group>"; };
+		DAFE7DA81CBB898D000388C8 /* RtButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RtButtonItem.m; sourceTree = "<group>"; };
+		DAFE7DA91CBB898D000388C8 /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
+		DAFE7DAA1CBB898D000388C8 /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,16 +110,11 @@
 		DAFE7D611CBB4038000388C8 /* RtActionSheet */ = {
 			isa = PBXGroup;
 			children = (
+				DAFE7DA41CBB898D000388C8 /* RtActionSheet */,
 				DAFE7D651CBB4038000388C8 /* AppDelegate.h */,
 				DAFE7D661CBB4038000388C8 /* AppDelegate.m */,
 				DAFE7D681CBB4038000388C8 /* ViewController.h */,
 				DAFE7D691CBB4038000388C8 /* ViewController.m */,
-				DAFE7D9E1CBB42C2000388C8 /* RtButtonItem.h */,
-				DAFE7D9F1CBB42C2000388C8 /* RtButtonItem.m */,
-				DAFE7D951CBB4054000388C8 /* RtActionSheet.h */,
-				DAFE7D961CBB4054000388C8 /* RtActionSheet.m */,
-				DAFE7DA11CBB7005000388C8 /* UIImageEffects.h */,
-				DAFE7DA21CBB7005000388C8 /* UIImageEffects.m */,
 				DAFE7D6B1CBB4038000388C8 /* Main.storyboard */,
 				DAFE7D6E1CBB4038000388C8 /* Assets.xcassets */,
 				DAFE7D701CBB4038000388C8 /* LaunchScreen.storyboard */,
@@ -153,6 +148,19 @@
 				DAFE7D891CBB4038000388C8 /* Info.plist */,
 			);
 			path = RtActionSheetUITests;
+			sourceTree = "<group>";
+		};
+		DAFE7DA41CBB898D000388C8 /* RtActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE7DA51CBB898D000388C8 /* RtActionSheet.h */,
+				DAFE7DA61CBB898D000388C8 /* RtActionSheet.m */,
+				DAFE7DA71CBB898D000388C8 /* RtButtonItem.h */,
+				DAFE7DA81CBB898D000388C8 /* RtButtonItem.m */,
+				DAFE7DA91CBB898D000388C8 /* UIImageEffects.h */,
+				DAFE7DAA1CBB898D000388C8 /* UIImageEffects.m */,
+			);
+			path = RtActionSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,10 +295,10 @@
 			files = (
 				DAFE7D6A1CBB4038000388C8 /* ViewController.m in Sources */,
 				DAFE7D671CBB4038000388C8 /* AppDelegate.m in Sources */,
-				DAFE7DA31CBB7005000388C8 /* UIImageEffects.m in Sources */,
-				DAFE7DA01CBB42C2000388C8 /* RtButtonItem.m in Sources */,
+				DAFE7DAD1CBB898D000388C8 /* UIImageEffects.m in Sources */,
 				DAFE7D641CBB4038000388C8 /* main.m in Sources */,
-				DAFE7D971CBB4054000388C8 /* RtActionSheet.m in Sources */,
+				DAFE7DAC1CBB898D000388C8 /* RtButtonItem.m in Sources */,
+				DAFE7DAB1CBB898D000388C8 /* RtActionSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
