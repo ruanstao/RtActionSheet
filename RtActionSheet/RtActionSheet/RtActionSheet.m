@@ -69,8 +69,16 @@
             va_end(argumentList);
         }
         self.otherButtonArray = buttonsArray;
-        self.destructiveButtonArray =[NSMutableArray arrayWithArray:@[inDestructiveItem]];
-        self.cancelButtonArray = [NSMutableArray arrayWithArray:@[inCancelButtonItem]];
+        if (inDestructiveItem) {
+            self.destructiveButtonArray =[NSMutableArray arrayWithArray:@[inDestructiveItem]];
+        }else{
+            self.destructiveButtonArray =[NSMutableArray array];
+        }
+        if (inCancelButtonItem) {
+            self.cancelButtonArray = [NSMutableArray arrayWithArray:@[inCancelButtonItem]];
+        }else{
+            self.cancelButtonArray = [NSMutableArray array];
+        }
 
     }
     return self;
