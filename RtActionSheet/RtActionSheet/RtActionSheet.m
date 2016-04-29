@@ -147,9 +147,27 @@
     [btn setTitleColor:color forState:UIControlStateNormal];
     btn.frame = CGRectMake(0, y, width, Height_Button);
     btn.backgroundColor = [UIColor whiteColor];
+    [btn setBackgroundImage:[self imageWithColor:[UIColor whiteColor] Size:CGRectMake(0, 0, CGRectGetWidth(btn.frame), CGRectGetHeight(btn.frame))] forState:UIControlStateNormal];
+    [btn setBackgroundImage:[self imageWithColor:[UIColor lightGrayColor] Size:CGRectMake(0, 0, CGRectGetWidth(btn.frame), CGRectGetHeight(btn.frame))] forState:UIControlStateHighlighted];
+
     btn.clickBLock = block;
     [btn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
     [_bgView addSubview:btn];
+}
+
+- (UIImage *)imageWithColor:(UIColor *)color Size:(CGRect)size
+{
+    CGRect rect = size;
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    return image;
 }
 
 - (void)click:(RtButton *)btn {
